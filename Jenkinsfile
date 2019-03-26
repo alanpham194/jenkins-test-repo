@@ -15,7 +15,7 @@ pipeline {
                         publishers:[
                             sshPublisherDesc(configName:'general_service_test',verbose:true,transfers:[
                                 sshTransfer(
-                                    sourceFiles:"target/test.war"
+                                    sourceFiles:"target/test.war",
                                     remoteDirectory:"~"
                                 ),
                                 sshTransfer(
