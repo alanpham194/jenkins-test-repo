@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            label 'slave-maven'
-        }
-    }
+    agent {label 'slave-maven'}
     stages {
         stage('Install dependencies') {
             steps {
