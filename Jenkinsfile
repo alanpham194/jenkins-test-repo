@@ -10,7 +10,7 @@ pipeline {
         stage('Deploy to server'){
             steps{
                 echo "Deploy................"
-                sh 'll'
+                sh 'ls'
                 sh 'pwd'
                 sshPublisher(
                             publishers:[
