@@ -17,7 +17,7 @@ pipeline {
                                 sshPublisherDesc(configName:'general_service_test',verbose:true,transfers:[
                                     sshTransfer(
                                         sourceFiles:"target/test.war",
-                                        remoteDirectory:"~"
+                                        remoteDirectory:"/home/ubuntu/test/"
                                     ),
                                     sshTransfer(
                                         //exec commands
