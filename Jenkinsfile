@@ -20,7 +20,7 @@ pipeline {
                                 ),
                                 sshTransfer(
                                     //exec commands
-                                    execCommand: echo "done build................."
+                                    execCommand: 'echo "done build................."'
                                 )
                             ])
                     ])
