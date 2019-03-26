@@ -16,7 +16,7 @@ pipeline {
                             sshPublisherDesc(configName:'general_service_test',verbose:true,transfers:[
                                 sshTransfer(
                                     sourceFiles:"target/test.war"
-                                    remoteDirectory:"~/" //use "~" will made it create a new ~ dir
+                                    remoteDirectory:"~"
                                 ),
                                 sshTransfer(
                                     //exec commands
