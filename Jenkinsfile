@@ -9,8 +9,8 @@ pipeline {
 
         stage('Deploy to server'){
             echo "Deploy................"
-            ll
-            pwd
+            sh 'll'
+            sh 'pwd'
             sshPublisher(
                         publishers:[
                             sshPublisherDesc(configName:'general_service_test',verbose:true,transfers:[
